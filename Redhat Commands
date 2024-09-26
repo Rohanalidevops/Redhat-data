@@ -1,0 +1,24 @@
+To Check any ehternet connection
+----------------------------------
+nmcli  con show
+To connect any etharnet
+-----------------------
+nmcli con up ens160 (For vmware)
+
+
+Root Password chnage
+------------------
+restart
+go to second option 
+press (win+e)
+then press (ctrl+e)
+then= rd.break
+
+mount -o remount,rw /sysroot
+chroot /sysroot
+passwd root
+New Password=
+Retype Password=
+touch /.autorelabel
+exit
+exit
